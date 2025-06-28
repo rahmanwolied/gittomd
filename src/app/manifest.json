@@ -1,7 +1,22 @@
 {
   "name": "Github to Markdown",
   "short_name": "GH2MD",
+  "description": "Convert GitHub repositories to Markdown documentation",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "categories": ["productivity", "developer", "utilities"],
+  "lang": "en-US",
+  "scope": "/",
   "icons": [
+    {
+      "src": "/icons/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
     {
       "src": "/icons/web-app-manifest-192x192.png",
       "sizes": "192x192",
@@ -12,10 +27,18 @@
       "src": "/icons/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#f8f8f8",
-  "background_color": "#f8f8f8",
-  "display": "standalone"
+  "screenshots": [],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  }
 }

@@ -1,4 +1,4 @@
-import { FileItem, TreeNode } from "./types";
+import type { FileItem, TreeNode } from "./types";
 
 const KNOWN_TEXT_FILES: Set<string> = new Set([
   ".md", ".markdown", ".txt", ".log", ".json", ".yaml", ".yml", ".xml", ".html", ".htm",

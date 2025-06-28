@@ -6,6 +6,8 @@
 
 # GH2MD: GitHub to Markdown
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d3c3ceb7-abd4-4bda-bbbf-07a3a60ae10b/deploy-status)](https://app.netlify.com/projects/gittomd/deploys)
+
 GH2MD is a web service that converts any public GitHub repository into a single, easy-to-read Markdown file.
 
 ## How to use

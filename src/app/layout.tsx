@@ -6,6 +6,15 @@ const AVEstianaFont = localFont({
   src: "../../public/fonts/AVEstiana-Regular.otf",
 });
 
+export function generateViewport() {
+  return {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
+  };
+}
+
 export const metadata: Metadata = {
   title: "GitToMD",
   description: "Convert GitHub repositories to Markdown",

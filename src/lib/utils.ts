@@ -13,7 +13,7 @@ export function parseGitHubUrl(
     const [owner, repo] = pathParts;
     return { owner, repo: repo.replace(".git", "") };
   } catch (error) {
-    console.error("Invalid GitHub URL:", error);
+    console.log("Invalid URL format:", error);
     return null;
   }
 }

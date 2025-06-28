@@ -6,11 +6,12 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "next lint --fix",
     "keygen": "node genkey.js"
   },
   "dependencies": {
     "@octokit/auth-app": "^8.0.1",
+    "@upstash/redis": "^1.35.0",
     "next": "15.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -21,6 +22,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.21",
     "eslint": "9.29.0",
     "eslint-config-next": "15.3.4",
     "tailwindcss": "^4",

@@ -17,12 +17,22 @@
     --background: #101112;
     --foreground: #f8f8f8;
   }
+
+  body {
+    background-image: image-set( url('/images/bg-dark.webp') 1x, url('/images/bg-dark.png') 1x);
+    background-size: cover;
+    background-repeat: no-repeat;;
+    background-attachment: fixed;
+    background-position: center;
+  }
 }
 
 body {
   background-color: var(--background);
+  
   color: var(--foreground);
 }
+
 
 html, body {
   height: 100%;
