@@ -39,8 +39,8 @@ export function interpretGitHubErrorForHttpStatus(errorMessage: string): number 
     }
     if (errorMessage.includes("Status:")) { // Other specific GitHub client/server errors
         const statusMatch = errorMessage.match(/Status: (\d+)/);
-        if (statusMatch && parseInt(statusMatch[1], 10) >= 500) return 502; // GitHub server error -> Bad Gateway
-        if (statusMatch && parseInt(statusMatch[1], 10) >= 400) return 502; // Other GitHub client error -> Bad Gateway
+        if (statusMatch && parseInt(statusMatch[1], 10) >= 500) return 502;
+        if (statusMatch && parseInt(statusMatch[1], 10) >= 400) return 502;
     }
     return 500; 
 }

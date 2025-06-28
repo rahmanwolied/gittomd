@@ -11,22 +11,17 @@ import { processFile, createTreeStructure } from "./files";
 const GITHUB_API_BASE_URL = "https://api.github.com";
 const GITHUB_RAW_CONTENT_BASE_URL = "https://raw.githubusercontent.com";
 
-  // 1. Combine username and password
-  const credentials = `Iv23lisV8WMJhl8vvGBO:${process.env.GITHUB_API_TOKEN}`;
-  // 2. Encode to Base64 using Buffer (server-side)
-  const encodedCredentials = Buffer.from(credentials).toString("base64");
+const credentials = `${process.env.GITHUB_CLIENT_ID}:${process.env.GITHUB_API_TOKEN}`;
+const encodedCredentials = Buffer.from(credentials).toString("base64");
 
 const commonHeaders: HeadersInit = {
-  Accept: "application/vnd.github.v3+json", // For GitHub API
+  Accept: "application/vnd.github.v3+json",
   "X-GitHub-Api-Version": "2022-11-28",
-  // Basic authentication header use your GitHub API token and client ID
   Authorization: `Basic ${encodedCredentials}`,
-  "X-GitHub-Client-ID": "Iv23lisV8WMJhl8vvGBO", // Replace with your actual client ID
-
+  "X-GitHub-Client-ID": process.env.GITHUB_CLIENT_ID || "",
 };
 const rawContentHeaders: HeadersInit = {
-  // For raw.githubusercontent.com
-  Accept: "text/plain", // Request plain text
+  Accept: "text/plain",
 };
 
 /**
@@ -244,14 +239,13 @@ export async function generateMarkdownForFiles(
   if (repoFiles.tree) {
     collectAllBlobFilesRecursively(repoFiles.tree);
   }
-  
+
   // Sort files so that README.md is processed first, then others
   filesToFetchContentFor.sort((a, b) => {
-    if (a.path === "README.md") return -1; 
-    if (b.path === "README.md") return 1; 
+    if (a.path === "README.md") return -1;
+    if (b.path === "README.md") return 1;
     return a.path.localeCompare(b.path);
   });
-
 
   const fileProcessingPromises = filesToFetchContentFor.map(
     async (fileData) => {

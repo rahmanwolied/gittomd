@@ -6,14 +6,14 @@ export type GitHubApiFile = {
 export interface TreeNode {
   type: "tree" | "blob";
   name: string;
-  path: string; // Full path from repo root
+  path: string; 
   children?: TreeNode[];
 }
 
 export interface RepositoryFilesTree {
   owner: string;
   repo: string;
-  defaultBranch: string; // Added: needed for raw content URLs
+  defaultBranch: string; 
   tree: TreeNode;
 }
 
@@ -22,10 +22,6 @@ export type FileItem = {
     path: string;
     content: string;
 }
-
-/*
-    Results of the actions
-*/
 
 export interface ActionError {
   error: string;
