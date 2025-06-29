@@ -30,7 +30,12 @@
 *   **Simple & Free:** No sign-up required. Just paste a URL and go.
 
 
+
+
+
 ## 🛠️ How to Use
+
+![gittomd Demo GIF](./public/images/usage.gif)
 
 Using `gittomd` is as simple as it gets.
 
@@ -54,10 +59,8 @@ This project is built with a modern, performant, and scalable stack:
 
 *   **Framework:** [Next.js](https://nextjs.org/) 15 (App Router & Turbopack)
 *   **Styling:** [Tailwind CSS](https://tailwindcss.com/) v4
-*   **Language:** [TypeScript](https://www.typescriptlang.org/)
 *   **Caching:** [Upstash Redis](https://upstash.com/)
 *   **GitHub API:** [Octokit](https://github.com/octokit/octokit.js)
-*   **Hosting:** [Netlify](https://www.netlify.com/) / [Vercel](https://vercel.com/)
 
 ## 🤝 Contributing & Running Locally
 
@@ -67,7 +70,7 @@ We welcome contributions of all kinds! Whether it's reporting a bug, suggesting 
 
 1.  **Fork & Clone:**
     ```bash
-    git clone https://github.com/YOUR_USERNAME/gittomd.git
+    git clone https://github.com/OpenSpace-Dev/gittomd.git
     cd gittomd
     ```
 
