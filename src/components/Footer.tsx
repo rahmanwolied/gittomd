@@ -11,9 +11,7 @@ export default function Footer() {
         rel="noopener noreferrer"
       >OpenSpace Dev
       </Link>
-      <p className="opacity-">v. 0.0.2</p>
       </div>
-      
       <Link
         href={"https://github.com/OpenSpace-Dev/gittomd"}
         target="_blank"

@@ -35,11 +35,11 @@ export default function Inputbox() {
       value={link}
       onChange={(e) => setLink(e.target.value)}
       onKeyDown={handleKeyDown}
-      type="text"
-      autoFocus
+      type="url"
       disabled={loading}
+      placeholder="Enter GitHub repository URL"
       className={twMerge(
-        "border-2 backdrop-blur-xl bg-transparent drop-shadow-[0_0_12px]/50 text-center text-xl rounded-lg md:rounded-xl px-2 py-1 md:px-4 md:py-2  md:w-[30%] transition-all duration-200 focus:outline-none disabled:opacity-50 disabled:cursor-wait",
+        "border-2 backdrop-blur-xl bg-transparent drop-shadow-[0_0_12px]/50 text-center rounded-lg md:rounded-xl px-2 py-1 md:px-4 md:py-2 w-[80%] md:w-[30%] transition-all duration-200 focus:outline-none disabled:opacity-50 disabled:cursor-wait",
         (error ? "border-red-500 drop-shadow-red-500 text-red-500" : "border-primary drop-shadow-[color:var(--primary)] text-primary"),
       )}
     />

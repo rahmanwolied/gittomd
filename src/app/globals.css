@@ -29,7 +29,6 @@
 
 body {
   background-color: var(--background);
-  
   color: var(--foreground);
 }
 
@@ -37,5 +36,6 @@ body {
 html, body {
   height: 100%;
   min-height: 100dvh;
+  scrollbar-width: none;
 }
 

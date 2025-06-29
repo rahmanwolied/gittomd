@@ -16,12 +16,15 @@ export function generateViewport() {
 }
 
 export const metadata: Metadata = {
-  title: "GitToMD",
-  description: "Convert GitHub repositories to Markdown",
+  title: "gittomd: Convert GitHub Repositories to a Single Markdown File",
+  // Description должен включать ключевые слова и призыв к действию
+  description:
+    "Instantly convert any public GitHub repository into a single, clean Markdown file. Perfect for feeding code to LLMs (GPT-4, Claude), creating docs, and offline analysis.",
   openGraph: {
-    title: "GitToMD",
+    // title и description для соцсетей
+    title: "gittomd: Your Entire GitHub Repo in One Markdown File",
     description:
-      "Your repository. In Markdown. Instantly. Convert GitHub repositories to Markdown",
+      "The perfect tool for feeding codebases to LLMs, creating documentation, or for offline code analysis.",
     url: "https://gittomd.com",
     siteName: "GitToMD",
     images: [
@@ -71,6 +74,23 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://gittomd.com"),
 };
 
+// JSON-ld
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "gittomd",
+  applicationCategory: "DeveloperTool",
+  operatingSystem: "Web",
+  description:
+    "A tool to convert any public GitHub repository into a single, clean Markdown file, optimized for LLMs and documentation.",
+  url: "https://gittomd.com",
+  author: {
+    "@type": "Organization",
+    name: "OpenSpace Dev",
+    url: "https://openspace.team",
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -79,6 +99,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${AVEstianaFont.className} antialiased`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {children}
       </body>
     </html>

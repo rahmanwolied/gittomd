@@ -22,8 +22,6 @@
 
 ### ✨ Key Features
 
-*   **Interactive File Selection:** Don't just convert—curate. You get a full file tree and can check/uncheck any file or folder you want to include in the output.
-*   **Branch, Tag, & Commit Support:** Analyze the `main` branch, a feature branch, a specific version tag, or even a single commit SHA.
 *   **LLM-Optimized Formatting:** Outputs clean Markdown with language-annotated code blocks (`\`\`\`typescript:src/app/page.tsx`), a format that models understand perfectly.
 *   **Intelligent Filtering:** Automatically ignores binary files and common clutter (`.git`, `node_modules`, `dist/`, etc.) to keep your context clean.
 *   **Blazing Fast & Cached:** Leverages a global edge network and Redis caching to deliver results quickly, even for large repositories.
@@ -41,8 +39,7 @@ Using `gittomd` is as simple as it gets.
 
 1.  **Visit [gittomd.com](https://gittomd.com)**
 2.  **Paste** a GitHub repository URL.
-3.  **Customize** your selection in the file tree (optional).
-4.  **Click Generate** and copy the Markdown to your clipboard!
+3.  **Click Generate** and copy the Markdown to your clipboard!
 
 Alternatively, you can access the content directly via URL:
 
