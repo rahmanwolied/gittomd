@@ -50,7 +50,7 @@ export async function GET(request: NextRequest) {
       headers: {
         "Content-Type": "text/markdown; charset=utf-8",
         "Cache-Control":
-          "public, s-maxage=21600, max-age=3600, stale-while-revalidate=43200, stale-if-error=86400",
+          "public, s-maxage=600, max-age=300, stale-while-revalidate=1800, stale-if-error=3600",
         "X-Content-Type-Options": "nosniff",
         "X-Frame-Options": "DENY",
         "X-XSS-Protection": "1; mode=block",
@@ -86,7 +86,7 @@ export async function GET(request: NextRequest) {
     headers: {
       "Content-Type": "text/markdown; charset=utf-8",
       "Cache-Control":
-        "public, s-maxage=21600, max-age=3600, stale-while-revalidate=43200, stale-if-error=86400",
+        "public, s-maxage=600, max-age=300, stale-while-revalidate=1800, stale-if-error=3600",
       "X-Content-Type-Options": "nosniff",
       "X-Frame-Options": "DENY",
       "X-XSS-Protection": "1; mode=block",

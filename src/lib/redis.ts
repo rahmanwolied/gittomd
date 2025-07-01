@@ -46,7 +46,8 @@ export const cacheData = async (user: string, repo: string, data: string): Promi
         const compressedData = await brotliCompressAsync(data);
         // Convert to base64 for storage
         const dataEncoded = Buffer.from(compressedData).toString('base64');
-        await client.set(key, dataEncoded)
+        await client.set(key, dataEncoded, {ex: 3600}); // Set expiration to 1 hour
+        console.log(`Data cached for ${user}/${repo}`);
     } catch (error) {
         console.error('Error compressing data for caching:', error);
     }
