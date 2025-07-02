@@ -16,6 +16,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/OpenSpace-Dev/gittomd)](https://github.com/OpenSpace-Dev/gittomd/issues)
 [![GitHub stars](https://img.shields.io/github/stars/OpenSpace-Dev/gittomd)](https://github.com/OpenSpace-Dev/gittomd/stargazers)
 
+<a href="https://www.producthunt.com/products/gittomd?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-gittomd" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=985582&theme=neutral&t=1751451822453" alt="gittomd - Your&#0032;GitHub&#0032;repo&#0044;&#0032;packaged&#0032;into&#0032;a&#0032;single&#0032;Markdown&#0032;file | Product Hunt" style="width: 250px; height: 32px;" width="250" height="32" /></a>
 </div>
 
 ---
@@ -99,5 +100,5 @@ If you find `gittomd` useful, please give it a ⭐️ on GitHub! It helps the pr
 ---
 
 <div align="center">
-  <p>A project by <a href="https://openspace.team">OpenSpace Dev</a></p>
+  <p>A project by <a href="https://t.me/openspaceteam">OpenSpace Dev</a></p>
 </div>

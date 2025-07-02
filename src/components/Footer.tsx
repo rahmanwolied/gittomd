@@ -6,7 +6,7 @@ export default function Footer() {
       
       <div className="flex gap-2">
         <Link
-        href={"https://openspace.team"}
+        href={"https://t.me/openspaceteam"}
         target="_blank"
         rel="noopener noreferrer"
       >OpenSpace Dev

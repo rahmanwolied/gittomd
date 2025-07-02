@@ -87,7 +87,7 @@ const jsonLd = {
   author: {
     "@type": "Organization",
     name: "OpenSpace Dev",
-    url: "https://openspace.team",
+    url: "https://t.me/openspaceteam",
   },
 };
 
