@@ -17,11 +17,17 @@ export function generateViewport() {
 
 export const metadata: Metadata = {
   title: "gittomd: Convert GitHub Repositories to a Single Markdown File",
-  // Description должен включать ключевые слова и призыв к действию
   description:
     "Instantly convert any public GitHub repository into a single, clean Markdown file. Perfect for feeding code to LLMs (GPT-4, Claude), creating docs, and offline analysis.",
-  openGraph: {
-    // title и description для соцсетей
+    keywords: [
+      "github",
+      "markdown",
+      "gittomd",
+      "convert github to markdown",
+      "github to markdown",
+      "github repository to markdown",  
+    ],
+    openGraph: {
     title: "gittomd: Your Entire GitHub Repo in One Markdown File",
     description:
       "The perfect tool for feeding codebases to LLMs, creating documentation, or for offline code analysis.",
@@ -74,7 +80,6 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://gittomd.com"),
 };
 
-// JSON-ld
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
