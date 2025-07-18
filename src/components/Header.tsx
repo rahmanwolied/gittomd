@@ -3,11 +3,12 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="py-1 md:py-3 pr-2 mx-3 md:mx-6 dark:my-3 dark:border-0 border-b-[1px] border-foreground flex  items-center">
+    <header className="py-1 md:py-3 pr-2 mx-3 md:mx-6 dark:my-3 flex items-center">
       <Link href="/" className="flex items-center gap-2">
         <Image src="/icons/logo.svg" alt="Logo" width={48} height={48} />
       </Link>
       <div className="grow"></div>
+      
       <Link
         href={"https://github.com/OpenSpace-Dev/gittomd"}
         target="_blank"
