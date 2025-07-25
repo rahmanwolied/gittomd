@@ -8,14 +8,24 @@ export default function Home() {
       <Header />
       <main className="grow w-full flex flex-col items-center md:justify-center py-8 gap-8 md:gap-16 text-center px-4">
         <section className="min-h-[81dvh] w-full grow flex flex-col items-center justify-center">
+          
+          <h1 className="text-3xl md:text-4xl lg:text-5xl mb-8 font-bold leading-tight text-foreground">
+            Convert any GitHub Repository <br className="hidden md:block" />
+            to a Single Markdown File
+          </h1>
+          <h2 className="mt-4 mb-8 text-lg text-foreground/80 hidden">
+            The perfect tool to feed codebases to LLMs like GPT-4, create
+            documentation, or for offline analysis.
+          </h2>
+          <Inputbox />
           <a
             href="https://www.npmjs.com/package/gittomd"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-foreground hover:underline underline-offset-2 font-medium"
+            className="text-foreground underline-offset-2 font-medium mt-8"
           >
-            <div className="mb-4 p-2 border border-foreground/20 rounded-lg backdrop-blur-md transition-opacity opacity-80 hover:opacity-100 max-w-sm">
-              <p className="text-sm text-foreground flex gap-2 items-center hover:text-decoration-none ">
+            <div className=" p-2 border border-foreground/20 rounded-lg backdrop-blur-md transition-opacity opacity-80 hover:opacity-100 max-w-sm">
+              <p className="text-sm text-foreground flex gap-2 items-center ">
                 
                 <svg
                   viewBox="0 0 2500 2500"
@@ -33,15 +43,6 @@ export default function Home() {
               </p>
             </div>
           </a>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl mb-8 font-bold leading-tight text-foreground">
-            Convert any GitHub Repository <br className="hidden md:block" />
-            to a Single Markdown File
-          </h1>
-          <h2 className="mt-4 mb-8 text-lg text-foreground/80 hidden">
-            The perfect tool to feed codebases to LLMs like GPT-4, create
-            documentation, or for offline analysis.
-          </h2>
-          <Inputbox />
         </section>
         <section className="w-full max-w-4xl">
           <h1 className="text-3xl md:text-4xl font-semibold mb-6 text-foreground">
